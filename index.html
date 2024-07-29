@@ -1,4 +1,4 @@
-<div class='loader'></div>
+<!--<div class='loader'></div>-->
 <div class='splash'></div>
 <div class='frame1'></div>
 <div class='frame2'></div>
@@ -10,7 +10,7 @@
   </span>
 </div>
 <style>
-  @import url(https://fonts.googleapis.com/css?family=Devonshire);
+@import url(https://fonts.googleapis.com/css?family=Devonshire);
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@ body {
   overflow: hidden;
 }
 
-.loader {
+/*.loader {
   position: absolute;
   z-index: 1000;
   background: url(https://raw.githubusercontent.com/niranjanwho/playon/main/playon_bg_2.webp) 50% 50% no-repeat white;
@@ -30,10 +30,10 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-}
+}*/
 
 .splash {
-  background: url(https://raw.githubusercontent.com/niranjanwho/playon/main/playon_bg_1.webp) fixed no-repeat;
+  background: url(https://raw.githubusercontent.com/niranjanwho/playon/main/playon_bg_2.webp) fixed no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -87,13 +87,14 @@ body {
 <script scr="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script scr="https://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
 <script>
+
 (function () {
-    $(window).load(function () {
+    /*$(window).load(function () {
         setTimeout(function () {
            $('.loader').fadeOut();
             start();
         }, 200);
-    });
+    });*/
     $(document).ready(function () {
         $('.splash').slideToggle(3000);
         $('.frame1').delay(3200).show('slide', { direction: 'right' }, 1000);
